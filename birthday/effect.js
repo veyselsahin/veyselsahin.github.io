@@ -17,6 +17,13 @@ $('document').ready(function(){
 		});
 
 	$('#turn_on').click(function(){
+
+	});
+	turnon()
+	play()
+	banner_coming()
+	balloons_flying()
+	function turnon(){
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
 		$('#bulb_blue').addClass('bulb-glow-blue');
@@ -27,11 +34,11 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
-	});
-	$('#play').click(function(){
+	}
+	function play(){
 		var audio = $('.song')[0];
-        audio.play();
-        $('#bulb_yellow').addClass('bulb-glow-yellow-after');
+		audio.play();
+		$('#bulb_yellow').addClass('bulb-glow-yellow-after');
 		$('#bulb_red').addClass('bulb-glow-red-after');
 		$('#bulb_blue').addClass('bulb-glow-blue-after');
 		$('#bulb_green').addClass('bulb-glow-green-after');
@@ -42,15 +49,21 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
+	}
+	$('#play').click(function(){
+
 	});
 
 	$('#bannar_coming').click(function(){
+
+	});
+	function banner_coming()
+	{
 		$('.bannar').addClass('bannar-come');
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#balloons_flying').fadeIn('slow');
 		});
-	});
-
+	}
 	function loopOne() {
 		var randleft = 1000*Math.random();
 		var randtop = 500*Math.random();
@@ -103,6 +116,9 @@ $('document').ready(function(){
 	}
 
 	$('#balloons_flying').click(function(){
+
+	});
+	function balloons_flying(){
 		$('.balloon-border').animate({top:-500},8000);
 		$('#b1,#b4,#b5,#b7').addClass('balloons-rotate-behaviour-one');
 		$('#b2,#b3,#b6').addClass('balloons-rotate-behaviour-two');
@@ -118,11 +134,11 @@ $('document').ready(function(){
 		loopFive();
 		loopSix();
 		loopSeven();
-		
+
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#cake_fadein').fadeIn('slow');
 		});
-	});	
+	}
 
 	$('#cake_fadein').click(function(){
 		$('.cake').fadeIn('slow');
