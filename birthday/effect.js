@@ -35,8 +35,6 @@ $('document').ready(function(){
 
 	}
 	function play(){
-		var audio = $('.song')[0];
-		audio.play();
 		$('#bulb_yellow').addClass('bulb-glow-yellow-after');
 		$('#bulb_red').addClass('bulb-glow-red-after');
 		$('#bulb_blue').addClass('bulb-glow-blue-after');
@@ -48,6 +46,9 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(6000).promise().done(function(){
 			$('#bannar_coming').fadeIn('slow');
 		});
+
+		var audio = $('.song')[0];
+		audio.play();
 	}
 	$('#play').click(function(){
 
