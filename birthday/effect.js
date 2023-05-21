@@ -47,8 +47,8 @@ $('document').ready(function(){
 		//	$('#bannar_coming').fadeIn('slow');
 		//});
 
-		var audio = $('.song')[0];
-		audio.play();
+		//var audio = $('.song')[0];
+		//audio.play();
 	}
 	$('#play').click(function(){
 
