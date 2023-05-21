@@ -43,9 +43,9 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange-after');
 		$('body').css('backgroud-color','#FFF');
 		$('body').addClass('peach-after');
-		$(this).fadeOut('slow').delay(6000).promise().done(function(){
-			$('#bannar_coming').fadeIn('slow');
-		});
+		//$(this).fadeOut('slow').delay(6000).promise().done(function(){
+		//	$('#bannar_coming').fadeIn('slow');
+		//});
 
 		var audio = $('.song')[0];
 		audio.play();
