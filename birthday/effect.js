@@ -19,10 +19,7 @@ $('document').ready(function(){
 	$('#turn_on').click(function(){
 
 	});
-	turnon()
-	play()
-	banner_coming()
-	balloons_flying()
+
 	function turnon(){
 		$('#bulb_yellow').addClass('bulb-glow-yellow');
 		$('#bulb_red').addClass('bulb-glow-red');
@@ -209,6 +206,10 @@ $('document').ready(function(){
 		msgLoop(0);
 		
 	});
+	turnon()
+	play()
+	banner_coming()
+	balloons_flying()
 });
 
 
