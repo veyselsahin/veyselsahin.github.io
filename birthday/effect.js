@@ -31,6 +31,7 @@ $('document').ready(function(){
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
 			$('#play').fadeIn('slow');
 		});
+		play()
 	}
 	function play(){
 		var audio = $('.song')[0];
@@ -207,7 +208,7 @@ $('document').ready(function(){
 		
 	});
 	turnon()
-	play()
+
 	banner_coming()
 	balloons_flying()
 });
