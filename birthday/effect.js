@@ -29,9 +29,9 @@ $('document').ready(function(){
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
 		$(this).fadeOut('slow').delay(5000).promise().done(function(){
-			$('#play').fadeIn('slow');
+			play()
 		});
-		play()
+
 	}
 	function play(){
 		var audio = $('.song')[0];
