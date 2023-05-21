@@ -28,9 +28,10 @@ $('document').ready(function(){
 		$('#bulb_pink').addClass('bulb-glow-pink');
 		$('#bulb_orange').addClass('bulb-glow-orange');
 		$('body').addClass('peach');
-		$(this).fadeOut('slow').delay(5000).promise().done(function(){
-			play()
-		});
+		play()
+		//$(this).fadeOut('slow').delay(5000).promise().done(function(){
+		//
+		//});
 
 	}
 	function play(){
