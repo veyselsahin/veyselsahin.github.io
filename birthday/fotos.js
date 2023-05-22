@@ -21,22 +21,7 @@ $('document').ready(function(){
 	});
 
 	function turnon(){
-		$('#bulb_yellow').addClass('bulb-glow-yellow');
-		$('#bulb_red').addClass('bulb-glow-red');
-		$('#bulb_blue').addClass('bulb-glow-blue');
-		$('#bulb_green').addClass('bulb-glow-green');
-		$('#bulb_pink').addClass('bulb-glow-pink');
-		$('#bulb_orange').addClass('bulb-glow-orange');
-		$('body').addClass('peach');
-		window.setTimeout(function (){
-			play()
-		},2000)
-		window.setTimeout(function (){
-			play()
-		},2000)
-		//$(this).fadeOut('slow').delay(5000).promise().done(function(){
-		//
-		//});
+
 
 	}
 	function play(){
