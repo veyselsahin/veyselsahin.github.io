@@ -223,6 +223,7 @@ $('document').ready(function(){
 		}
 
 		msgLoop(0);
+		$("#fotolarimiz-btn").show()
 	}
 	$('#story').click(function(){
 

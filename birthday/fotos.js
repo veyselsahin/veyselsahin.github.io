@@ -19,8 +19,21 @@ $('document').ready(function(){
 	$('#turn_on').click(function(){
 		turnon()
 	});
-
+	turnon()
 	function turnon(){
+
+		var divs = Array.from({length: 22}, (_, i) => 'foto' + (i + 1));
+		divs.forEach(function (e	){
+			$("#"+e).hide()
+		})
+// Choose a random index
+		var randomIndex = Math.floor(Math.random() * divs.length);
+
+// Use the random index to get the id of a random div
+		var randomDivId = divs[randomIndex];
+
+// Get the random div element
+		$("#"+randomDivId).show()
 
 
 	}
@@ -208,6 +221,7 @@ $('document').ready(function(){
 		}
 
 		msgLoop(0);
+
 	}
 	$('#story').click(function(){
 
